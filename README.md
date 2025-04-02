@@ -1,2 +1,2 @@
-# isaca-uw
+# ISACA
 Website for the ISACA chapter at UW
