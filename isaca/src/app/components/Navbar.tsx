@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Navbar() {
     return (
       <nav className='flex justify-between'>
-        <img src='logos/logo.png' className='ml-7'></img>
+        <img src='logos/logo.png' className='ml-7 w-40'></img>
         {/* <Image
           src="logo.png"
           alt="Next.js logo"
