@@ -6,21 +6,7 @@ import Link from "next/link";
 export default function Navbar() {
     return (
       <nav className='flex justify-between'>
-        <img src='logo.png' className='ml-7'></img>
-        {/* <Image
-          src="logo.png"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-        /> */}
-        {/* <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        /> */}
+        <img src='logo.png' className='ml-7 w-40'></img>
 
         <ul className="flex justify-end items-center">
             <li className="mr-7"><Link href='./'>Home</Link></li>
