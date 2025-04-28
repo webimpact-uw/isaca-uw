@@ -3,10 +3,14 @@ import React from 'react';
 const AboutIntro : React.FC = () => { 
     return(
         <section style = {{padding: "60px 20px",textAlign: "center" }}>
-            
-            
             <h1 style={{color:'#0C2A64'}}>About Us</h1>
-            <p>Founded in 2016, ISACA UW is dedicatedFounded in 2016, 
+            <p style={{ 
+            maxWidth: "700px", 
+            margin: "0 auto 40px", 
+            fontSize: "18px", 
+            lineHeight: "1.6", 
+            color: "#333"
+      }}>Founded in 2016, ISACA UW is dedicatedFounded in 2016, 
                 ISACA UW is dedicated to promoting excellence in information
                  security by providing quality programming for current University
                   of Washington students to interact with industry leaders and gain 
