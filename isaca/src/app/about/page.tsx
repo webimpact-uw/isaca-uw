@@ -13,11 +13,11 @@ export default function AboutPage(){
         {/* External Link Buttons */}
         <div className='flex justify-center mb-10'>
           <Button
-            description='Puget Sound Chapter' 
+            description='Puget Sound Chapter'
             link='https://engage.isaca.org/pugetsoundchapter/home'>
           </Button>
-          <Button 
-            description='Global Chapter' 
+          <Button
+            description='Global Chapter'
             link='https://www.isaca.org/'>
           </Button>
         </div>
@@ -33,12 +33,11 @@ export default function AboutPage(){
 
           <div>
             <p className="mt-4 text-[#0C2A64]">
-            Sponsored by the ISACA Puget Sound Chapter, ISACA UW students have the opportunity to 
+            Sponsored by the ISACA Puget Sound Chapter, ISACA UW students have the opportunity to
             write a cybersecurity-related paper for the chance to earn a $5,000 tuition scholarship.
             </p>
 
-            {/* TODO: change the link to external scholarships page */}
-            <Button description='learn more' link='/scholarships'></Button>
+            <Button description='learn more' link='https://engage.isaca.org/pugetsoundchapter/home'></Button>
           </div>
         </section>
 
