@@ -9,6 +9,8 @@ export default function AboutPage(){
     return (
       <Container>
         <AboutIntro />
+
+        {/* External Link Buttons */}
         <div className='flex justify-center mb-10'>
           <Button
             description='Puget Sound Chapter' 
@@ -35,6 +37,7 @@ export default function AboutPage(){
             write a cybersecurity-related paper for the chance to earn a $5,000 tuition scholarship.
             </p>
 
+            {/* TODO: change the link to external scholarships page */}
             <Button description='learn more' link='/scholarships'></Button>
           </div>
         </section>
