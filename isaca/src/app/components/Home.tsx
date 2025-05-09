@@ -2,47 +2,47 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="max-w-7xl mx-auto px-6 py-12 space-y-20">
+    <main className="max-w-7xl mx-auto p-14 space-y-20">
       {/* Intro */}
-      <section className="grid md:grid-cols-2 items-end gap-8">
-          <div>
-            <h1 className="text-5xl font-semibold text-[#0C2A64]">
+      <section className="grid md:grid-cols-2 items-end gap-5">
+          <div className='space-y-5'>
+            <h1>
               Promoting Student Engagement in Information Security
             </h1>
 
-            <div className="mt-3 flex items-center space-x-4">
-              <p className="text-2xl text-[#0C2A64]">ISACA UW Chapter</p>
+            <div className="mt-3 flex items-center space-x-10">
+              <h3 className="text-2xl font-semibold">ISACA UW Chapter</h3>
               
               <div className="inline-flex items-center bg-[#D4EAF1] rounded-full px-4 py-2">
                 <img src="ischool.png" alt="iSchool Logo" className="w-6 h-6 mr-2" />
                 
-                <span className="text-lg font-medium text-[#0C2A64]">
+                <span className="text-xs font-medium">
                   iSchool affiliated RSO
                 </span>
               </div>
             </div>
           </div>
 
-          <img src="imgs/event1.jpeg" alt="Event 1" className="w-full h-auto rounded-lg shadow-lg object-cover" />
+          <img src="imgs/event1.jpeg" alt="Event 1" />
         </section>
 
         {/* About Us */}
-        <section className="grid md:grid-cols-2 items-center gap-8">
-          <img src="imgs/event2.jpeg" alt="Event 2" className="w-full h-auto rounded-lg shadow-lg object-cover"/>
+        <section className="grid md:grid-cols-3 items-center gap-10">
+          <img src="imgs/event2.jpeg" alt="Event 2" />
 
-          <div>
-            <h2 className="text-3xl font-semibold text-[#0C2A64]">
+          <div className="col-span-2">
+            <h2 className="mb-4">
               About Us
             </h2>
 
-            <p className="mt-4 text-[#0C2A64]">
+            <p className="mb-4">
               ISACA is a global professional association focused on IT governance,
               risk management, cybersecurity, and assurance.
             </p>
 
             <Link
               href="/about"
-              className="mt-6 inline-flex items-center px-4 py-2 border border-[#619DC5] text-[#0C2A64] font-medium rounded hover:bg-[#D4EAF1]"
+              className="inline-flex items-center px-3 py-2 border border-[#619DC5] font-medium rounded-xs hover:bg-[#D4EAF1]"
             >
               learn more
 
@@ -55,19 +55,19 @@ export default function Home() {
 
         {/* Upcoming Events */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-semibold text-[#0C2A64]">
+          <h2 className="text-3xl font-semibold">
             Upcoming Events
           </h2>
 
           <Link
             href="/events"
-            className="inline-flex items-center px-4 py-1 border border-[#619DC5] text-[#0C2A64] rounded hover:bg-[#D4EAF1]"
+            className="inline-flex items-center px-3 py-2 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1] mb-7"
           >
             view all
 
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path 
-                strokeWidth="2" 
+                strokeWidth="2"
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
                 d="M5 12h14m-7-7l7 7-7 7" 
@@ -79,17 +79,16 @@ export default function Home() {
             {[1, 2, 3, 4].map((id) => (
               <div
                 key={id}
-                className="min-w-[260px] p-6 border border-[#0C2A64] rounded-lg flex-shrink-0 space-y-3"
+                className="w-[300px] w-[260px] p-6 border border-[#0C2A64] rounded-sm flex-shrink-0 space-y-3"
               >
-                <h3 className="font-mono text-lg text-[#0C2A64]">
+                <h4>
                   Event Name, Event Name
-                </h3>
+                </h4>
 
-                <p className="text-[#0C2A64]">Location</p>
+                <h5>Location</h5>
+                <h5>XX/XX/XX at XX:XX</h5>
 
-                <p className="text-[#0C2A64]">XX/XX/XX at XX:XX</p>
-
-                <button className="px-3 py-1 border border-[#619DC5] text-[#0C2A64] rounded hover:bg-[#D4EAF1] text-sm">
+                <button className="px-3 py-1 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1] text-sm">
                   RSVP
                 </button>
               </div>
@@ -98,11 +97,11 @@ export default function Home() {
         </section>
 
         {/* Follow Us */}
-        <section className="grid md:grid-cols-2 items-center gap-8">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-semibold text-[#0C2A64]">Follow Us</h2>
+        <section className="grid md:grid-cols-3 items-center">
+          <div className="space-y-4 col-span-2">
+            <h2 className="text-3xl font-semibold">Follow Us</h2>
             
-            <p className="text-[#0C2A64]">
+            <p>
               Follow us on socials to keep up with our events and announcements.
             </p>
 
@@ -111,7 +110,7 @@ export default function Home() {
                 href="https://www.instagram.com/isacauw/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 border border-[#619DC5] text-[#0C2A64] rounded hover:bg-[#D4EAF1]"
+                className="px-3 py-2 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1]"
               >
                 Instagram
               </a>
@@ -120,14 +119,14 @@ export default function Home() {
                 href="https://www.linkedin.com/company/isaca-university-of-washington-student-chapter/about/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 border border-[#619DC5] text-[#0C2A64] rounded hover:bg-[#D4EAF1]"
+                className="px-3 py-2 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1]"
               >
                 LinkedIn
               </a>
             </div>
           </div>
 
-          <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto rounded-lg shadow-lg object-cover" />
+          <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto object-cover" />
       </section>
     </main>
   );
