@@ -12,9 +12,9 @@ export default function Footer() {
 
 
             <ul className="flex justify-end items-center">
-                <li className="mr-4"><Link href='./'><img src='instagram.png' className='ml-3 w-8'></img></Link></li>
-                <li className="mr-4"><Link href='./about'> <img src='linked.png' className='ml-3 w-8'></img> </Link></li>
-                <li className="mr-4"><Link href='./events'><img src='mail.png' className='ml-3 w-8'></img></Link></li>
+                <li className="mr-4"><Link href='./'><img src='icons/instagram.png' className='ml-3 w-8'></img></Link></li>
+                <li className="mr-4"><Link href='./about'> <img src='icons/linked.png' className='ml-3 w-8'></img> </Link></li>
+                <li className="mr-4"><Link href='./events'><img src='icons/mail-icon.svg' className='ml-3 w-8'></img></Link></li>
             </ul>
         </div>
 

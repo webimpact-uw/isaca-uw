@@ -22,7 +22,7 @@ export default function AboutPage(){
           </Button>
         </div>
 
-        <img src="lecture.jpeg" alt="professor lecturing" className="rounded-lg shadow-lg" />
+        <img src="imgs/lecture.jpeg" alt="professor lecturing" className="rounded-lg shadow-lg" />
 
         <h2 className="text-3xl font-semibold text-navy-blue mt-10">
           ISACA Puget Sound Scholarship
