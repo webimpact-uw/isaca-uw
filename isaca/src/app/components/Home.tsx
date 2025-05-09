@@ -14,11 +14,11 @@ export default function Home() {
               <h3 className="text-2xl font-semibold">ISACA UW Chapter</h3>
               
               <div className="inline-flex items-center bg-[#D4EAF1] rounded-full px-4 py-2">
-                <img src="ischool.png" alt="iSchool Logo" className="w-6 h-6 mr-2" />
+                <img src="icons/ischool.png" alt="iSchool Logo" className="w-6 h-6 mr-2" />
                 
-                <span className="text-xs font-medium">
+                <Link href='https://ischool.uw.edu/programs/informatics/community' className="text-xs font-medium">
                   iSchool affiliated RSO
-                </span>
+                </Link>
               </div>
             </div>
           </div>

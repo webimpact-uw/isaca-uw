@@ -1,10 +1,53 @@
 @import "tailwindcss";
 
 :root {
+  /* main */
   --background: #F2F2F7;
-  --text: #0C2A64;
+  --text: #333333;
+
+  /* primary colors */
+  --blue: #009ED8;
+  --dark-blue: #005288;
+  --navy-blue: #0C2A64;
+  --green: #3CA686;
+
+  /* neutrals */
+  --lighter-gray: #D1D1D6;
+  --med-gray: #8E8E93;
+  --off-white: #F2F2F7;
+
+  /* secondary blues */
+  --med-blue: #619DC5;
+  --light-blue: #B0DAEA;
+  --lightest-blue: #D4EAF1;
+
+  /* Fonts */
   --font-dm-sans: "DM Sans", sans-serif;
   --font-dm-mono: "DM Mono", sans-serif;
+}
+
+/* These theme variables can be used by inline Tailwind classes */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-text-color: var(--text);
+
+  --color-blue: var(--blue);
+  --color-dark-blue: var(--dark-blue);
+  --color-navy-blue: var(--navy-blue);
+  --color-green: var(--green);
+
+  --color-med-gray: var(--med-gray);
+  --color-lighter-gray: var(--lighter-gray);
+  --color-off-whiet: var(--off-white);
+
+  --color-med-blue: var(--med-blue);
+  --color-light-blue: var(--light-blue);
+  --color-lightest-blue: var(--lightest-blue);
+
+  --font-sans: var(--font-dm-sans);
+  --font-mono: var(--font-dm-mono);
 }
 
 body {
@@ -59,7 +102,7 @@ h5 {
 p {
   font-size: 20px;
   font-weight: 400;
-  color: #333333;
+  color: var(--text);
 }
 
 :link {
