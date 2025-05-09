@@ -1,8 +1,26 @@
 @import "tailwindcss";
 
 :root {
+  /* main */
   --background: #F2F2F7;
   --text: #0C2A64;
+
+  /* primary colors */
+  --blue: #009ED8;
+  --dark-blue: #005288;
+  --navy-blue: #0C2A64;
+  --green: #3CA686;
+
+  /* neutrals */
+  --light-gray: #D1D1D6;
+  --med-gray: #8E8E93;
+  --off-white: #F2F2F7;
+
+  /* TODO: Add secondary colors */
+  --med-blue: #619DC5;
+  --light-blue: #B0DAEA;
+  --lightest-blue: #D4EAF1;
+
   --font-dm-sans: "DM Sans", sans-serif;
   --font-dm-mono: "DM Mono", sans-serif;
 }

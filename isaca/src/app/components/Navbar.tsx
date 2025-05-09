@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between'>
+    <nav className='flex justify-between my-4'>
       <img src='logos/logo.png' alt="ISACA logo" className='ml-7 w-40' />
 
       <ul className="flex justify-end items-center">

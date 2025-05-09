@@ -6,7 +6,6 @@ const ScholarshipInfo : React.FC = () => {
             {/* currently unused */}
         </div>
     );
-
 };
 
 export default ScholarshipInfo;
