@@ -29,9 +29,7 @@ export default function Home() {
 
         {/* About Us */}
         <section className="grid md:grid-cols-10 items-center gap-10">
-          <img src="imgs/event2.jpeg" alt="Event 2" className="col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
-
-          <div className="col-span-6">
+          <div className="col-span-6 md:order-last">
             <h2 className="mb-4">
               About Us
             </h2>
@@ -52,6 +50,8 @@ export default function Home() {
               </svg>
             </Link>
           </div>
+
+          <img src="imgs/event2.jpeg" alt="Event 2" className="md:order-first col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
         </section>
 
         {/* Upcoming Events */}
