@@ -6,17 +6,18 @@ export default function Home() {
       {/* Intro */}
       <section className="grid md:grid-cols-2 items-end gap-5">
           <div className='space-y-5'>
-            <h1>
+            <h1 className="">
               Promoting Student Engagement in Information Security
             </h1>
 
             <div className="mt-3 flex items-center space-x-10">
-              <h3 className="text-2xl font-semibold">ISACA UW Chapter</h3>
-              
+              <h4 className="font-semibold">ISACA UW Chapter</h4>
+
               <div className="inline-flex items-center bg-[#D4EAF1] rounded-full px-4 py-2">
                 <img src="icons/ischool.png" alt="iSchool Logo" className="w-6 h-6 mr-2" />
-                
-                <Link href='https://ischool.uw.edu/programs/informatics/community' className="text-xs font-medium">
+
+                <Link href='https://ischool.uw.edu/programs/informatics/community'
+                  className="text-base font-medium">
                   iSchool affiliated RSO
                 </Link>
               </div>
@@ -35,7 +36,7 @@ export default function Home() {
               About Us
             </h2>
 
-            <p className="mb-4">
+            <p className="mb-4 text-lg">
               ISACA is a global professional association focused on IT governance,
               risk management, cybersecurity, and assurance.
             </p>
@@ -66,11 +67,11 @@ export default function Home() {
             view all
 
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path 
+              <path
                 strokeWidth="2"
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                d="M5 12h14m-7-7l7 7-7 7" 
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5 12h14m-7-7l7 7-7 7"
               />
             </svg>
           </Link>
@@ -100,8 +101,8 @@ export default function Home() {
         <section className="grid md:grid-cols-3 items-center">
           <div className="space-y-4 col-span-2">
             <h2 className="text-3xl font-semibold">Follow Us</h2>
-            
-            <p>
+
+            <p className="text-lg">
               Follow us on socials to keep up with our events and announcements.
             </p>
 
