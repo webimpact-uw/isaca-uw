@@ -22,7 +22,7 @@ export default function AboutPage(){
           </Button>
         </div>
 
-        <img src="imgs/lecture.jpeg" alt="professor lecturing" className="rounded-lg shadow-lg" />
+        <img src="imgs/lecture.jpeg" alt="professor lecturing" className="rounded-lg hover:shadow-xl/20 transition duration-400 ease-in-out" />
 
         <h2 className="text-3xl font-semibold text-navy-blue mt-10">
           ISACA Puget Sound Scholarship
@@ -46,7 +46,10 @@ export default function AboutPage(){
           <h2 className="text-3xl font-semibold text-navy-blue mt-10 mb-8">
             Our Team
           </h2>
-          <TeamSection></TeamSection>
+          <div className='flex justify-center'>
+            <TeamSection></TeamSection>
+          </div>
+          
         </section>
       </Container>
     );
