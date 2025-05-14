@@ -5,7 +5,9 @@ export default function Home() {
     <main className="max-w-7xl mx-auto p-14 space-y-20">
       {/* Intro */}
       <section className="grid md:grid-cols-2 items-end gap-5">
-          <div className='space-y-5'>
+        <img src="imgs/event1.jpeg" alt="Event 1" className="md:order-last w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
+
+          <div className='md:order-first space-y-5'>
             <h1 className="">
               Promoting Student Engagement in Information Security
             </h1>
@@ -23,8 +25,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <img src="imgs/event1.jpeg" alt="Event 1" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
         </section>
 
         {/* About Us */}
