@@ -32,7 +32,7 @@ export default function AboutPage(){
         <section className="grid md:grid-cols-2 items-center gap-8">
 
           <div>
-            <p className="mt-4 text-text-color">
+            <p className="mt-4 text-base">
             Sponsored by the ISACA Puget Sound Chapter, ISACA UW students have the opportunity to
             write a cybersecurity-related paper for the chance to earn a $5,000 tuition scholarship.
             </p>
@@ -49,7 +49,7 @@ export default function AboutPage(){
           <div className='flex justify-center'>
             <TeamSection></TeamSection>
           </div>
-          
+
         </section>
       </Container>
     );

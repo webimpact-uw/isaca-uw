@@ -8,9 +8,9 @@ export default function Navbar() {
       </Link>
 
       <ul className="flex justify-end items-center text-navy-blue">
-          <li className="mr-7 text-lg"><Link href='/'>Home</Link></li>
-          <li className="mr-7 text-lg"><Link href='/about'>About</Link></li>
-          <li className="mr-7 text-lg"><Link href='/events'>Events</Link></li>
+          <li className="mr-7 text-lg font-semibold"><Link href='/'>Home</Link></li>
+          <li className="mr-7 text-lg font-semibold"><Link href='/about'>About</Link></li>
+          <li className="mr-7 text-lg font-semibold"><Link href='/events'>Events</Link></li>
       </ul>
     </nav>
   );

@@ -28,10 +28,10 @@ export default function Home() {
         </section>
 
         {/* About Us */}
-        <section className="grid md:grid-cols-3 items-center gap-10">
-          <img src="imgs/event2.jpeg" alt="Event 2" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
+        <section className="grid md:grid-cols-10 items-center gap-10">
+          <img src="imgs/event2.jpeg" alt="Event 2" className="col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
 
-          <div className="col-span-2">
+          <div className="col-span-6">
             <h2 className="mb-4">
               About Us
             </h2>
@@ -98,7 +98,7 @@ export default function Home() {
         </section>
 
         {/* Follow Us */}
-        <section className="grid md:grid-cols-3 items-center">
+        <section className="grid md:grid-cols-3 items-center gap-10">
           <div className="space-y-4 col-span-2">
             <h2 className="text-3xl font-semibold">Follow Us</h2>
 
