@@ -23,12 +23,12 @@ export default function Home() {
             </div>
           </div>
 
-          <img src="imgs/event1.jpeg" alt="Event 1" className='rounded-lg' />
+          <img src="imgs/event1.jpeg" alt="Event 1" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
         </section>
 
         {/* About Us */}
-        <section className="grid md:grid-cols-3 items-center gap-10">
-          <img src="imgs/event2.jpeg" alt="Event 2" className="rounded-lg" />
+        <section className="grid md:grid-cols-2 items-center gap-8">
+          <img src="imgs/event2.jpeg" alt="Event 2" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
 
           <div className="col-span-2">
             <h2 className="mb-4">
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
           </div>
 
-          <img src="imgs/event3.jpeg" alt="Event 3" className="rounded-lg" />
+          <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
       </section>
     </main>
   );
