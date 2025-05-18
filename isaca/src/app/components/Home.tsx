@@ -1,6 +1,24 @@
 import Link from 'next/link'
 
-export default function Home() {
+export interface CalendarEvent {
+  id: string
+  title: string
+  start: string    // ISO date
+  location: string
+  link: string
+}
+
+interface HomeProps {
+  events: CalendarEvent[]
+}
+
+export default function Home({ events }: HomeProps) {
+  const format = (iso: string) =>
+    new Intl.DateTimeFormat('en-US', {
+      month: '2-digit', day: '2-digit', year: '2-digit',
+      hour: '2-digit', minute: '2-digit',
+    }).format(new Date(iso))
+
   return (
     <main className="max-w-7xl mx-auto p-14 space-y-20">
       {/* Intro */}
@@ -55,46 +73,24 @@ export default function Home() {
 
         {/* Upcoming Events */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-semibold">
-            Upcoming Events
-          </h2>
-
-          <Link
-            href="/events"
-            className="inline-flex items-center px-3 py-2 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1] mb-7"
-          >
-            view all
-
-            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path 
-                strokeWidth="2"
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                d="M5 12h14m-7-7l7 7-7 7" 
-              />
-            </svg>
-          </Link>
-
-          <div className="flex space-x-6 overflow-x-auto pb-2">
-            {[1, 2, 3, 4].map((id) => (
-              <div
-                key={id}
-                className="w-[300px] w-[260px] p-6 border border-[#0C2A64] rounded-sm flex-shrink-0 space-y-3"
+        <h2 className="text-3xl font-semibold">Upcoming Events</h2>
+        {/* view all link */}
+        <div className="flex space-x-6 overflow-x-auto pb-2">
+          {events.map(evt => (
+            <div key={evt.id} className="w-[260px] p-6 border rounded-sm flex-shrink-0 space-y-3">
+              <h4>{evt.title}</h4>
+              <h5>{evt.location}</h5>
+              <h5>{format(evt.start)}</h5>
+              {/* <button
+                onClick={() => window.open(evt.link, '_blank')}
+                className="px-3 py-1 border rounded-xs hover:bg-[#D4EAF1] text-sm"
               >
-                <h4>
-                  Event Name, Event Name
-                </h4>
-
-                <h5>Location</h5>
-                <h5>XX/XX/XX at XX:XX</h5>
-
-                <button className="px-3 py-1 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1] text-sm">
-                  RSVP
-                </button>
-              </div>
-            ))}
-          </div>
-        </section>
+                RSVP
+              </button> */}
+            </div>
+          ))}
+        </div>
+      </section>
 
         {/* Follow Us */}
         <section className="grid md:grid-cols-3 items-center">

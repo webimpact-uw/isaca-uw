@@ -7,19 +7,16 @@ export default function Events() {
       <p className="text-gray-500 text-md mt-2 pb-10 font-DM Sans">
         Check out upcoming events. We do about 3-4 events a quarter! ...
       </p>
-      <hr className="w-5/6 border-t border-gray-700 my-4 pb-10" />
-        <iframe
-        id="open-web-calendar"
-        style={{
-          background: "url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat",
-          width: "100%",
-          height: "500px",
-          border: "none"
-        }}
-        src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?controls=next&controls=previous&controls=date&skin=flat&tabs=&url=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2F9caa3bc6075136a8221ba12bc282faa66eefbd514d5634c16ccee8af61295c2d%2540group.calendar.google.com%2Fpublic%2Fbasic.ics"
-        sandbox="allow-scripts allow-same-origin allow-top-navigation allow-downloads"
-        scrolling="no"
-      />
+      <hr className="w-5/6 border-t border-gray-700 my-4 " />
+      <div>
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showCalendars=0&showNav=0&showPrint=0&title&src=OWNhYTNiYzYwNzUxMzZhODIyMWJhMTJiYzI4MmZhYTY2ZWVmYmQ1MTRkNTYzNGMxNmNjZWU4YWY2MTI5NWMyZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E"
+       style={{borderWidth:0}}
+       className = "shadow-xl luminousity rounded-2xl"
+       color='#f4511e'
+        width="1100" 
+        height="600"  
+        scrolling="no"></iframe>
+        </div>
     </div>
   );
 }
