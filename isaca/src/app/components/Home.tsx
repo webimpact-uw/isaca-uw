@@ -69,29 +69,29 @@ export default function Home({ events }: HomeProps) {
             </Link>
           </div>
 
-          <img src="imgs/event2.jpeg" alt="Event 2" className="md:order-first col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
+          <img src="imgs/event2.jpeg" alt="Event 2" className="md:order-first col-span-6 md:col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
         </section>
 
         {/* Upcoming Events */}
         <section className="space-y-4">
-        <h2 className="text-3xl font-semibold">Upcoming Events</h2>
-        {/* view all link */}
-        <div className="flex space-x-6 overflow-x-auto pb-2">
-          {events.map(evt => (
-            <div key={evt.id} className="w-[260px] p-6 border rounded-sm flex-shrink-0 space-y-3">
-              <h4>{evt.title}</h4>
-              <h5>{evt.location}</h5>
-              <h5>{format(evt.start)}</h5>
-              {/* <button
-                onClick={() => window.open(evt.link, '_blank')}
-                className="px-3 py-1 border rounded-xs hover:bg-[#D4EAF1] text-sm"
-              >
-                RSVP
-              </button> */}
-            </div>
-          ))}
-        </div>
-      </section>
+          <h2 className="text-3xl font-semibold">Upcoming Events</h2>
+          {/* view all link */}
+          <div className="flex space-x-6 overflow-x-auto pb-2">
+            {events.map(evt => (
+              <div key={evt.id} className="w-[260px] p-6 border rounded-sm flex-shrink-0 space-y-3">
+                <h4>{evt.title}</h4>
+                <h5>{evt.location}</h5>
+                <h5>{format(evt.start)}</h5>
+                {/* <button
+                  onClick={() => window.open(evt.link, '_blank')}
+                  className="px-3 py-1 border rounded-xs hover:bg-[#D4EAF1] text-sm"
+                >
+                  RSVP
+                </button> */}
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* Follow Us */}
         <section className="grid md:grid-cols-3 items-center gap-10">
@@ -123,7 +123,7 @@ export default function Home({ events }: HomeProps) {
             </div>
           </div>
 
-          <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
+          <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto col-span-3 md:col-span-1 rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
       </section>
     </main>
   );
