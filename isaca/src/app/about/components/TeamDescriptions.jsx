@@ -2,7 +2,7 @@ const TeamDescriptions = () => {
 
     const officers = ['Hannah Lam', 'Trisha Thonupunoori', 'Daphni George', 'Rakshanda B', 'Nicole Herman'];
     const roles = ['President', 'Vice President', 'Treasurer', 'Marketing Officer', 'Communications Officer'];
-    return <div className="flex space-x-6 flex-wrap pb-2">
+    return <div className="flex flex-wrap pb-2 justify-center mb-10">
         {[0, 1, 2, 3, 4].map((id) => (
             <div
                 key={id}

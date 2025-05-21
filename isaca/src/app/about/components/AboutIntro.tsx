@@ -4,7 +4,7 @@ const AboutIntro : React.FC = () => {
     return(
         // <section style = {{padding: "60px 20px",textAlign: "center" }}>
         <section style = {{padding: "10px 20px",textAlign: "center" }}>
-            <h1>About Us</h1>
+            <h1 className="mb-2">About Us</h1>
             <p style={{
                 maxWidth: "700px",
                 margin: "0 auto",

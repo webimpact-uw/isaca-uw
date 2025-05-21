@@ -23,37 +23,36 @@ export default function Home({ events }: HomeProps) {
     <main className="max-w-7xl mx-auto p-14 space-y-20">
       {/* Intro */}
       <section className="grid md:grid-cols-2 items-end gap-5">
-          <div className='space-y-5'>
-            <h1>
+        <img src="imgs/event1.jpeg" alt="Event 1" className="md:order-last w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
+
+          <div className='md:order-first space-y-5'>
+            <h1 className="">
               Promoting Student Engagement in Information Security
             </h1>
 
             <div className="mt-3 flex items-center space-x-10">
-              <h3 className="text-2xl font-semibold">ISACA UW Chapter</h3>
-              
+              <h4 className="font-semibold">ISACA UW Chapter</h4>
+
               <div className="inline-flex items-center bg-[#D4EAF1] rounded-full px-4 py-2">
                 <img src="icons/ischool.png" alt="iSchool Logo" className="w-6 h-6 mr-2" />
-                
-                <Link href='https://ischool.uw.edu/programs/informatics/community' className="text-xs font-medium">
+
+                <Link href='https://ischool.uw.edu/programs/informatics/community'
+                  className="text-base font-medium">
                   iSchool affiliated RSO
                 </Link>
               </div>
             </div>
           </div>
-
-          <img src="imgs/event1.jpeg" alt="Event 1" />
         </section>
 
         {/* About Us */}
-        <section className="grid md:grid-cols-3 items-center gap-10">
-          <img src="imgs/event2.jpeg" alt="Event 2" />
-
-          <div className="col-span-2">
+        <section className="grid md:grid-cols-10 items-center gap-10">
+          <div className="col-span-6 md:order-last">
             <h2 className="mb-4">
               About Us
             </h2>
 
-            <p className="mb-4">
+            <p className="mb-4 text-lg">
               ISACA is a global professional association focused on IT governance,
               risk management, cybersecurity, and assurance.
             </p>
@@ -69,6 +68,8 @@ export default function Home({ events }: HomeProps) {
               </svg>
             </Link>
           </div>
+
+          <img src="imgs/event2.jpeg" alt="Event 2" className="md:order-first col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
         </section>
 
         {/* Upcoming Events */}
@@ -93,11 +94,11 @@ export default function Home({ events }: HomeProps) {
       </section>
 
         {/* Follow Us */}
-        <section className="grid md:grid-cols-3 items-center">
+        <section className="grid md:grid-cols-3 items-center gap-10">
           <div className="space-y-4 col-span-2">
             <h2 className="text-3xl font-semibold">Follow Us</h2>
-            
-            <p>
+
+            <p className="text-lg">
               Follow us on socials to keep up with our events and announcements.
             </p>
 
@@ -122,7 +123,7 @@ export default function Home({ events }: HomeProps) {
             </div>
           </div>
 
-          <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto object-cover" />
+          <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
       </section>
     </main>
   );
