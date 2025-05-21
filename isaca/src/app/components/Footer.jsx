@@ -12,9 +12,9 @@ export default function Footer() {
 
 
             <ul className="flex justify-end items-center">
-                <li className="mr-4"><Link href='./'><img src='icons/instagram.png' className='ml-3 w-8'></img></Link></li>
-                <li className="mr-4"><Link href='./about'> <img src='icons/linked.png' className='ml-3 w-8'></img> </Link></li>
-                <li className="mr-4"><Link href='./events'><img src='icons/mail-icon.svg' className='ml-3 w-8'></img></Link></li>
+                <li className="mr-4"><Link href='https://www.instagram.com/isacauw/'><img src='icons/instagram.png' className='ml-3 w-8'></img></Link></li>
+                <li className="mr-4"><Link href='https://www.linkedin.com/company/isaca-university-of-washington-student-chapter/about/'> <img src='icons/linked.png' className='ml-3 w-8'></img> </Link></li>
+                <li className="mr-4"><Link href='mailto:isacauw@uw.edu'><img src='icons/mail-icon.svg' className='ml-3 w-8'></img></Link></li>
             </ul>
         </div>
 
