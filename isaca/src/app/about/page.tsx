@@ -1,7 +1,6 @@
 import React from 'react';
 import AboutIntro from './components/AboutIntro';
 import Container from '../components/Container';
-import Link from 'next/link';
 import Button from '../components/Button';
 import TeamSection from './components/TeamDescriptions';
 

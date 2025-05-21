@@ -1,6 +1,6 @@
 export default function Container(props) {
     return (
-      <div className='m-15'>
+      <div className='max-w-7xl mx-auto p-14'>
         {props.children}
       </div>
     );

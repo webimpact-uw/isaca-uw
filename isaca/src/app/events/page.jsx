@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Events() {
   return (
-    <div className="flex flex-col items-center pt-10 min-h-screen">
+    <div className="flex flex-col items-center min-h-screen p-14">
       <h1 className="text-4xl font-bold-DM mono text-[#0C2A64] mb-2">Events</h1>
       <p className="text-gray-500 text-md mt-2 pb-10 font-DM Sans">
         Check out upcoming events. We do about 3-4 events a quarter! ...
