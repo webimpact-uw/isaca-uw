@@ -71,6 +71,21 @@ export default function Home({ events }: HomeProps) {
         <section className="space-y-4">
         <h2 className="text-3xl font-semibold">Upcoming Events</h2>
         {/* view all link */}
+             <Link
+            href="/events"
+            className="inline-flex items-center px-3 py-2 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1] mb-7"
+          >
+            view all
+
+            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path 
+                strokeWidth="2"
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                d="M5 12h14m-7-7l7 7-7 7" 
+              />
+            </svg>
+          </Link>
         <div className="flex space-x-6 overflow-x-auto pb-2">
           {events.map(evt => (
             <div key={evt.id} className="w-[260px] p-6 border rounded-sm flex-shrink-0 space-y-3">
