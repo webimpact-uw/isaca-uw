@@ -18,6 +18,9 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: "ISACA UW",
   description: "Website for the UW Chapter of ISACA",
+  icons: {
+    icon: 'logos/favicon.png'
+  },
 };
 
 export default function RootLayout({

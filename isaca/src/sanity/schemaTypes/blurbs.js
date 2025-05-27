@@ -1,3 +1,5 @@
+import {defineField, defineType} from 'sanity';
+
 export default {
   name: 'blurbs',
   title: 'Blurbs (for various pages)',
