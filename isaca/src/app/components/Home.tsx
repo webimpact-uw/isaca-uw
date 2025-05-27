@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Button from '../components/Button';
 
 export interface CalendarEvent {
   id: string
@@ -103,24 +104,15 @@ export default function Home({ events }: HomeProps) {
             </p>
 
             <div className="flex space-x-4">
-              <a
-                href="https://www.instagram.com/isacauw/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-3 py-2 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1] hover:text-white"
-              >
-                Instagram
-              </a>
-
-              <a
-                href="https://www.linkedin.com/company/isaca-university-of-washington-student-chapter/about/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-3 py-2 border border-[#619DC5] rounded-xs hover:bg-[#D4EAF1] group-hover: text-white"
-              >
-                LinkedIn
-              </a>
-            </div>
+  <Button
+    description="Instagram"
+    link="https://www.instagram.com/isacauw/"
+  />
+  <Button
+    description="LinkedIn"
+    link="https://www.linkedin.com/company/isaca-university-of-washington-student-chapter/about/"
+  />
+</div>
           </div>
 
           <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />
