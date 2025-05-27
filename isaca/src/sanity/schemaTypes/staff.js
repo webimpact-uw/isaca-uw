@@ -1,7 +1,9 @@
+import {defineField, defineType} from 'sanity';
+
 export default {
   name: 'staff',
   title: 'Staff',
-  type: 'document',
+  type: 'object',
   fields: [
     defineField({
       name: 'staffName',

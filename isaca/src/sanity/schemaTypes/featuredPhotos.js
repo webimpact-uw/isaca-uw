@@ -1,3 +1,5 @@
+import {defineField, defineType} from 'sanity';
+
 export default {
   name: 'featuredPhotos',
   title: 'Featured Photos',
@@ -7,7 +9,7 @@ export default {
 
     }),
     defineField({
-      
+
     })
   ]
 }
