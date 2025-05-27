@@ -83,12 +83,9 @@ export default function Home({ events }: HomeProps) {
               <h4>{evt.title}</h4>
               <h5>{evt.location}</h5>
               <h5>{format(evt.start)}</h5>
-              {/* <button
-                onClick={() => window.open(evt.link, '_blank')}
-                className="px-3 py-1 border rounded-xs hover:bg-[#D4EAF1] text-sm"
-              >
-                RSVP
-              </button> */}
+              {
+                
+              }
             </div>
           ))}
         </div>
