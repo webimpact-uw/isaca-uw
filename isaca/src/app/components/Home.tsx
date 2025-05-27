@@ -48,26 +48,20 @@ export default function Home({ events }: HomeProps) {
 
         {/* About Us */}
         <section className="grid md:grid-cols-10 items-center gap-10">
-          <div className="col-span-6 md:order-last">
-            <h2 className="mb-4">
+          <div className="space-y-4 col-span-6 md:order-last">
+            <h2 className="">
               About Us
             </h2>
 
-            <p className="mb-4 text-lg">
+            <p className="text-lg">
               ISACA is a global professional association focused on IT governance,
               risk management, cybersecurity, and assurance.
             </p>
 
-            <Link
-              href="/about"
-              className="inline-flex items-center px-3 py-2 border border-[#619DC5] font-medium rounded-xs hover:bg-[#D4EAF1]"
-            >
-              learn more
-
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </Link>
+            <Button
+                description="learn more"
+                link="/about"
+            />
           </div>
 
           <img src="imgs/event2.jpeg" alt="Event 2" className="md:order-first col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
@@ -84,7 +78,7 @@ export default function Home({ events }: HomeProps) {
               <h5>{evt.location}</h5>
               <h5>{format(evt.start)}</h5>
               {
-                
+
               }
             </div>
           ))}
@@ -100,16 +94,16 @@ export default function Home({ events }: HomeProps) {
               Follow us on socials to keep up with our events and announcements.
             </p>
 
-            <div className="flex space-x-4">
-  <Button
-    description="Instagram"
-    link="https://www.instagram.com/isacauw/"
-  />
-  <Button
-    description="LinkedIn"
-    link="https://www.linkedin.com/company/isaca-university-of-washington-student-chapter/about/"
-  />
-</div>
+            <div className="">
+              <Button
+                description="Instagram"
+                link="https://www.instagram.com/isacauw/"
+              />
+              <Button
+                description="LinkedIn"
+                link="https://www.linkedin.com/company/isaca-university-of-washington-student-chapter/about/"
+              />
+            </div>
           </div>
 
           <img src="imgs/event3.jpeg" alt="Event 3" className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out" />

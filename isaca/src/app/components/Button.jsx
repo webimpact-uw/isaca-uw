@@ -4,17 +4,17 @@ const Button = ({ link, description }) => (
   <Link
     href={link}
     className="
-      group relative inline-flex items-center 
-      mt-6 mr-4 px-3 py-2 border border-[#619DC5] 
+      group relative inline-flex items-center
+      mr-4 px-3 py-2 border border-[#619DC5]
       overflow-hidden rounded
     "
   >
     {/* 1) left-right navy background */}
     <span
       className="
-        absolute inset-0 bg-[#0C2A64] 
-        origin-left scale-x-0 
-        transition-transform duration-200 
+        absolute inset-0 bg-[#0C2A64]
+        origin-left scale-x-0
+        transition-transform duration-200
         group-hover:scale-x-100
       "
     />
@@ -22,9 +22,9 @@ const Button = ({ link, description }) => (
     {/*props.description*/}
     <span
       className="
-        relative flex items-center 
-        text-[#0C2A64] font-medium 
-        transition-colors duration-200 
+        relative flex items-center
+        text-[#0C2A64] font-medium
+        transition-colors duration-200
         group-hover:text-white
       "
     >
