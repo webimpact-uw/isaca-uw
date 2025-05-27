@@ -73,22 +73,21 @@ export default function Home({ events }: HomeProps) {
       <section className="space-y-4">
         <h2 className="text-3xl font-semibold">Upcoming Events</h2>
 
-        <Button
-          description="view more"
-          link="/events"
-        />
+        {/* Events Carousel */}
         <div className="flex space-x-6 overflow-x-auto pb-2">
           {events.map(evt => (
             <div key={evt.id} className="w-[260px] p-6 border rounded-sm flex-shrink-0 space-y-3">
               <h4>{evt.title}</h4>
-              <h5>{evt.location}</h5>
-              <h5>{format(evt.start)}</h5>
-              {
-
-              }
+              <p className="text-lg font-bold text-navy-blue">{format(evt.start)}</p>
+              <p className="">{evt.location}</p>
             </div>
           ))}
         </div>
+
+        <Button
+          description="view more"
+          link="/events"
+        />
       </section>
 
       {/* Follow Us */}
