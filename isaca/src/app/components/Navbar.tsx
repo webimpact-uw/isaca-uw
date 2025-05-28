@@ -18,8 +18,13 @@ export default function Navbar() {
       <section className="flex justify-end">
         {/** For mobile screens */}
         <div className="sm:hidden mr-7">
-          <img src='icons/menu.png' alt='menu icon' className='h-[40px]' id="menu-open"></img>
-          <img src='icons/close.png' alt='close icon' className='h-[40px]' id="menu-close"></img>
+          <div id="menu-open" className="">
+             <img src='icons/menu.png' alt='menu icon' className='h-[40px]'></img>
+          </div>
+
+          <div id="menu-close" className="hidden">
+            <img src='icons/close.png' alt='close icon' className='h-[40px]'></img>
+          </div>
         </div>
 
         {/** For desktop screens */}
