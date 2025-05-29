@@ -66,7 +66,7 @@ export default function Home({ events }: HomeProps) {
           />
         </div>
 
-        <img src="imgs/event2.jpeg" alt="Event 2" className="md:order-first col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
+        <img src="imgs/event2.jpeg" alt="Event 2" className="md:order-first col-span-6 md:col-span-4 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"/>
       </section>
 
       {/* Upcoming Events */}
@@ -112,7 +112,7 @@ export default function Home({ events }: HomeProps) {
         </div>
         <img src="imgs/event3.jpeg"
           alt="Event 3"
-          className="w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"
+          className="col-span-3 md:col-span-1 w-full h-auto rounded-lg object-cover hover:shadow-xl/20 transition duration-400 ease-in-out"
         />
       </section>
     </main>
