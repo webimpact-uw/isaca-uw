@@ -28,7 +28,7 @@ export default function Navbar() {
         </div>
 
         {/** For desktop screens */}
-        <ul className="hidden sm:flex items-center text-navy-blue text-l font-medium font-mono">
+        <ul className="hidden sm:flex mr-7 items-center text-navy-blue text-l font-medium font-mono">
           <li className={`mr-5 underline-offset-3 ${isActive("/") ? "underline" : "hover:underline"}`}><Link href='/'>Home</Link></li>
           <li className={`mr-5 underline-offset-3 ${isActive("/about") ? "underline" : "hover:underline"}`}><Link href='/about'>About</Link></li>
           <li className={`underline-offset-3 ${isActive("/events") ? "underline" : "hover:underline"}`}><Link href='/events'>Events</Link></li>
