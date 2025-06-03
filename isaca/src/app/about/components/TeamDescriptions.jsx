@@ -12,12 +12,13 @@ async function getData() {
     }`;
 
     const res = await client.fetch(query);
-    console.log(res);
     return res;
 }
 
 const TeamDescriptions = async () => {
     const staffData = await getData();
+
+    console.log(staffData[0].staffPhoto.asset.url);
 
     return (
         <div className="flex flex-wrap pb-2 justify-center mb-10">
@@ -33,15 +34,17 @@ const TeamDescriptions = async () => {
     )
 }
 
-function StaffCard (key, name, position, photoUrl) {
+function StaffCard ({key, name, position, photoUrl}) {
     return (
-        <div
-            key={key}
+        <div key={key}
             className="min-w-[230px] rounded-lg flex-shrink-0 space-y-3 pb-4"
         >
             <img src={photoUrl} className="w-50 h-50 object-contain">
             </img>
-            <p className="text-lg"><b>{name}</b><br/>{position}</p>
+            <p className="text-lg">
+                <b>{name}</b>
+                <br/>{position}
+            </p>
         </div>
     )
 }
