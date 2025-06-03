@@ -40,7 +40,7 @@ export default function Events() {
         ></iframe>
       </div>
 
-      <div className="sm:hidden" id="small-calendar">
+      <div className="md:hidden" id="small-calendar">
       <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&mode=AGENDA&src=NWQ5MWE5ZjFhZDMwNmViODgxMDU4MDFmNTQwMDQ2ODQ3ZGFkNjVlOThmODQ2YzQzNmM3MTM2OTI1OGJiYWViYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23c0ca33"
           style={{borderWidth:'0.6px', borderColor:'#0C2A64'}}
           className = "shadow-md luminousity rounded-2xl"
