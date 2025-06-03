@@ -14,12 +14,6 @@ import {schema} from './src/sanity/schema.js';
 import {schemaTypes} from './src/sanity/schemaTypes.js';
 import {structure} from './src/sanity/structure';
 
-console.log(dataset);
-console.log(projectId);
-
-// console.log(process.env.NEXT_PUBLIC_SANITY_PROJECT_ID);
-// console.log(process.env.NEXT_PUBLIC_SANITY_DATASET);
-
 export default defineConfig({
   basePath: '/studio',
   projectId: "kwr3521t",
