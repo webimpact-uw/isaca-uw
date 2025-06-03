@@ -116,3 +116,10 @@ p {
 #small-calendar iframe {
   width: 92vw;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--background) !important;
+    color: var(--text) !important;
+  }
+}

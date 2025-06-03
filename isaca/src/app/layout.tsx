@@ -30,13 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        // className={`${dmSans.variable} ${dmMono.variable} antialiased`}
-      >
-      <Navbar/>
+      <body>
+        <Navbar/>
 
         {children}
-      <Footer/>
+        
+        <Footer/>
       </body>
     </html>
   );
