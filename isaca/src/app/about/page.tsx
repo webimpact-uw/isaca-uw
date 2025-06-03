@@ -45,7 +45,7 @@ export default function AboutPage(){
           <h2 className="text-3xl font-semibold text-navy-blue mt-10 mb-8">
             Our Team
           </h2>
-          <div className='flex justify-center'>
+          <div className='flex flex-row'>
             <TeamSection></TeamSection>
           </div>
 

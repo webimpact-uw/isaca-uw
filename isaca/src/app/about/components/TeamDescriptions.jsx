@@ -35,10 +35,13 @@ const TeamDescriptions = async () => {
 function StaffCard ({name, position, photoUrl}) {
     return (
         <div
-            className="min-w-[200px] rounded-lg space-y-3 mb-4 mr-4"
+            className="w-full sm:max-w-[200px] rounded-lg space-y-3 mb-10 sm:mb-8 sm:mr-8"
         >
-            <img src={photoUrl} className="w-60 h-60 object-cover">
-            </img>
+            <div className="w-[100%] sm:w-50 sm:h-50">
+                <img src={photoUrl} className="object-cover">
+                </img>
+            </div>
+
             <p className="text-lg">
                 <b>{name}</b>
                 <br/>{position}
